@@ -22,7 +22,7 @@ export class CalculatorComponent  {
           this.action = action;
           break;
         case '-':
-          this.result = Number(this.firstNum) * Number(this.secondNum);
+          this.result = Number(this.firstNum) - Number(this.secondNum);
           this.action = action;
           break;
         case '*':
