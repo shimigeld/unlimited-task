@@ -1,0 +1,19 @@
+<form [formGroup]="empolyeeForm" (ngSubmit)="onSubmit()">
+    <label>
+        שם פרטי:
+        <input type="text" formControlName="firstName">
+    </label>
+    <label>
+        שם משפחה:
+        <input type="text" formControlName="lastName">
+    </label>
+
+    <label>
+        מס' טלפון:
+        <input type="text" formControlName="phoneNum">
+    </label>
+    <div>
+        <button type="submit" [disabled]="this.empolyeeForm.invalid">הוסף עובד</button>
+        <button type="button" (click)="empolyeeForm.reset()">אפס טופס</button>
+    </div>
+</form>

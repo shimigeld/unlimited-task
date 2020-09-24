@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "unlimited-task"
+    }
+  },
+  "defaultProject": "unlimited-task",
+  "cli": {
+    "analytics": "fd5f6ed3-40cc-4c80-a07e-291d0d73dc1e"
+  }
 }

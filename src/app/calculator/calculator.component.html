@@ -1,0 +1,26 @@
+<div class="container">
+    <input id="firstNum" placeholder="enter first number"
+    required
+    [(ngModel)]="firstNum" />
+    <span> {{action}} </span>
+    <input id="seocondNum" placeholder="enter second number"
+    required
+    [(ngModel)]="secondNum">
+
+    <span *ngIf="result"> = </span>
+
+    <input *ngIf="result" type="number" id="result" 
+    readonly
+    [(ngModel)]="result" />
+    <div>
+        <button (click)="buttonClicked('+')">+</button>
+        <button (click)="buttonClicked('-')">-</button>
+        <button (click)="buttonClicked('*')">*</button>
+        <button (click)="buttonClicked('/')">/</button>
+    </div>
+
+    <div class="error" *ngIf="errorMsg.length > 0">{{errorMsg}}</div>
+</div>
+
+
+

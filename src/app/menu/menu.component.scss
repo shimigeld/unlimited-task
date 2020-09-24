@@ -1,0 +1,12 @@
+ul {
+    text-align: right;
+
+    li {
+        width: 36%;
+        cursor: pointer;
+    }
+}
+
+.isSelected {
+    background-color: yellow;
+}

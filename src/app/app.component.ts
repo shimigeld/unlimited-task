@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'unlimited-task';
+  selectedSection: string = null;
+  onSectionClicked(section: string): void {
+    this.selectedSection = section;
+  }
 }
